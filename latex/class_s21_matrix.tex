@@ -1,0 +1,283 @@
+\doxysection{Класс S21\+Matrix}
+\hypertarget{class_s21_matrix}{}\label{class_s21_matrix}\index{S21Matrix@{S21Matrix}}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_s21_matrix_a06dbeb622372a64bc0142850dfeb8d01}\label{class_s21_matrix_a06dbeb622372a64bc0142850dfeb8d01} 
+void {\bfseries Memory\+Matrix\+Set} ()
+\begin{DoxyCompactList}\small\item\em Функция лочит память для матрицы, сначала для rows потом для cols и сразу зануляет значения для избежания мусора в значениях. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s21_matrix_a705b06eb1610474dd2df9e86f71faba9}{Matrix\+Delete}} ()
+\begin{DoxyCompactList}\small\item\em Удаление матрицы \end{DoxyCompactList}\item 
+\Hypertarget{class_s21_matrix_a9a55c9427424e45b31a3a11c9bb21815}\label{class_s21_matrix_a9a55c9427424e45b31a3a11c9bb21815} 
+void {\bfseries Matrix\+Check} ()
+\item 
+\Hypertarget{class_s21_matrix_a628a6c40197a7728235ab695d8d457a1}\label{class_s21_matrix_a628a6c40197a7728235ab695d8d457a1} 
+void {\bfseries Matrix\+Check} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&matrix)
+\item 
+\Hypertarget{class_s21_matrix_a7171a243d06d17d13e163547fb2badc8}\label{class_s21_matrix_a7171a243d06d17d13e163547fb2badc8} 
+void {\bfseries Check\+Zero} (int nb)
+\item 
+\Hypertarget{class_s21_matrix_a888294f6300914dd090c66620047dcfd}\label{class_s21_matrix_a888294f6300914dd090c66620047dcfd} 
+void {\bfseries Check\+Zero} (double nb)
+\item 
+\Hypertarget{class_s21_matrix_a04da1928689b85c1439def13f6f4910e}\label{class_s21_matrix_a04da1928689b85c1439def13f6f4910e} 
+void {\bfseries Matrix\+Check\+Square} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&matrix)
+\item 
+\Hypertarget{class_s21_matrix_a2c31528999ab397125d277d3021b4ee1}\label{class_s21_matrix_a2c31528999ab397125d277d3021b4ee1} 
+void {\bfseries Matrix\+Copy} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a8f167c2e8df23dcf6b9d53d1198b5936}\label{class_s21_matrix_a8f167c2e8df23dcf6b9d53d1198b5936} 
+void {\bfseries Matrix\+Replase} (\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&\&other)
+\item 
+\Hypertarget{class_s21_matrix_a030de51434f3c8c7d93e9132c9bfc1a7}\label{class_s21_matrix_a030de51434f3c8c7d93e9132c9bfc1a7} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries Matrix\+Reduce} (int row, int col)
+\item 
+\Hypertarget{class_s21_matrix_abd63efd34114095dd2c4402dd66d68bf}\label{class_s21_matrix_abd63efd34114095dd2c4402dd66d68bf} 
+void {\bfseries LU} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&A, \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&U, \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&L)
+\item 
+\Hypertarget{class_s21_matrix_acd81f74ad676db5dfb22a372f72605db}\label{class_s21_matrix_acd81f74ad676db5dfb22a372f72605db} 
+{\bfseries S21\+Matrix} (int rows, int cols)
+\item 
+\Hypertarget{class_s21_matrix_a4fc7dcd76245a2c67af8fcf985ea7e58}\label{class_s21_matrix_a4fc7dcd76245a2c67af8fcf985ea7e58} 
+{\bfseries S21\+Matrix} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_af22fc2a0eb30ac267aff8c9373a5e6f1}\label{class_s21_matrix_af22fc2a0eb30ac267aff8c9373a5e6f1} 
+{\bfseries S21\+Matrix} (\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&\&other)
+\item 
+\Hypertarget{class_s21_matrix_ab6feccb6a655aff492002bb3b344dc0c}\label{class_s21_matrix_ab6feccb6a655aff492002bb3b344dc0c} 
+double {\bfseries operator()} (int i, int j) const
+\item 
+\Hypertarget{class_s21_matrix_ab97a372938cd55af995f2e348890e773}\label{class_s21_matrix_ab97a372938cd55af995f2e348890e773} 
+double \& {\bfseries operator()} (int i, int j)
+\item 
+\Hypertarget{class_s21_matrix_a4ef130a2c71e39c9261c45effe2d4397}\label{class_s21_matrix_a4ef130a2c71e39c9261c45effe2d4397} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator=} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a5df211f11ab0562d9c1d6726ef96486d}\label{class_s21_matrix_a5df211f11ab0562d9c1d6726ef96486d} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator=} (\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&\&other)
+\item 
+\Hypertarget{class_s21_matrix_a381acb1729d85927807da54f953768ac}\label{class_s21_matrix_a381acb1729d85927807da54f953768ac} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator+} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a4dcc3a7e75efd905bd213a81700494cb}\label{class_s21_matrix_a4dcc3a7e75efd905bd213a81700494cb} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator-\/} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a47c89a6f60cb22c2dc484e3858702352}\label{class_s21_matrix_a47c89a6f60cb22c2dc484e3858702352} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator\texorpdfstring{$\ast$}{*}} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a92b6bd450c5693e98bc1b33dbae6d915}\label{class_s21_matrix_a92b6bd450c5693e98bc1b33dbae6d915} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator\texorpdfstring{$\ast$}{*}} (int nb)
+\item 
+\Hypertarget{class_s21_matrix_a5a68cb97f050dfbaa2dd261bca64195f}\label{class_s21_matrix_a5a68cb97f050dfbaa2dd261bca64195f} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator\texorpdfstring{$\ast$}{*}} (double nb)
+\item 
+\Hypertarget{class_s21_matrix_ad6b7f0261225b043a5eceae28aafe661}\label{class_s21_matrix_ad6b7f0261225b043a5eceae28aafe661} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator\texorpdfstring{$\ast$}{*}=} (double num)
+\item 
+\Hypertarget{class_s21_matrix_a9e3b55117ac9a789a48dee4ed28e0caf}\label{class_s21_matrix_a9e3b55117ac9a789a48dee4ed28e0caf} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a46c717c652efeee063e099a0d302167e}\label{class_s21_matrix_a46c717c652efeee063e099a0d302167e} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator+=} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_aedf0b52608f67b811b7d8ed782b3af8e}\label{class_s21_matrix_aedf0b52608f67b811b7d8ed782b3af8e} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator-\/=} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a1d54a91f95259348e029332ea8527b84}\label{class_s21_matrix_a1d54a91f95259348e029332ea8527b84} 
+double {\bfseries Determinant} ()
+\item 
+\Hypertarget{class_s21_matrix_adfb8f81ca8b93b4aa8ea74b3e39ab6b8}\label{class_s21_matrix_adfb8f81ca8b93b4aa8ea74b3e39ab6b8} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries Calc\+Complements} ()
+\item 
+\Hypertarget{class_s21_matrix_a8d2f8f38efa1397ec9ba809df8c8fd69}\label{class_s21_matrix_a8d2f8f38efa1397ec9ba809df8c8fd69} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries Inverse\+Matrix} ()
+\item 
+\Hypertarget{class_s21_matrix_acaa5cabda23f7e8758f39ddc72221809}\label{class_s21_matrix_acaa5cabda23f7e8758f39ddc72221809} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries Transpose} ()
+\item 
+\Hypertarget{class_s21_matrix_a0e90506aa92a723a1f466fd592ba9d3e}\label{class_s21_matrix_a0e90506aa92a723a1f466fd592ba9d3e} 
+void {\bfseries Mul\+Number} (const double num)
+\item 
+\Hypertarget{class_s21_matrix_a9a214ffdb2d2a53b07de685f47c9e2aa}\label{class_s21_matrix_a9a214ffdb2d2a53b07de685f47c9e2aa} 
+bool {\bfseries Eq\+Matrix} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_aaed2f61359590dde28168fae4d8db5d6}\label{class_s21_matrix_aaed2f61359590dde28168fae4d8db5d6} 
+void {\bfseries Sum\+Matrix} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a3738cf566aa7aacfa9cd9ba229122ab6}\label{class_s21_matrix_a3738cf566aa7aacfa9cd9ba229122ab6} 
+void {\bfseries Mul\+Matrix} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_aa3c0df749d948a9986a0ebe456f9a4e5}\label{class_s21_matrix_aa3c0df749d948a9986a0ebe456f9a4e5} 
+void {\bfseries Sub\+Matrix} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_ae270daa644f944d59f30dd04b3da2381}\label{class_s21_matrix_ae270daa644f944d59f30dd04b3da2381} 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries get\+Matrix} () const
+\item 
+\Hypertarget{class_s21_matrix_a1641dcfcfc8ee9e89801b468ea9d1d96}\label{class_s21_matrix_a1641dcfcfc8ee9e89801b468ea9d1d96} 
+double {\bfseries get\+Matrix} (int row, int col) const
+\item 
+\Hypertarget{class_s21_matrix_a8c9eabec233a0fcfc10f3488a684549b}\label{class_s21_matrix_a8c9eabec233a0fcfc10f3488a684549b} 
+int {\bfseries get\+Rows} () const
+\item 
+\Hypertarget{class_s21_matrix_a737160bef9fd72e098e67d01107ce748}\label{class_s21_matrix_a737160bef9fd72e098e67d01107ce748} 
+int {\bfseries get\+Cols} () const
+\item 
+\Hypertarget{class_s21_matrix_a858d4b1994318ee735b637fde0808ed7}\label{class_s21_matrix_a858d4b1994318ee735b637fde0808ed7} 
+void {\bfseries set\+Matrix} (double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matrix)
+\item 
+\Hypertarget{class_s21_matrix_a7bec858958bd30ade69adf8e47a01381}\label{class_s21_matrix_a7bec858958bd30ade69adf8e47a01381} 
+void {\bfseries set\+Rows} (int rows)
+\item 
+\Hypertarget{class_s21_matrix_abca34ad227152a5d770b37dd50da9408}\label{class_s21_matrix_abca34ad227152a5d770b37dd50da9408} 
+void {\bfseries set\+Cols} (int cols)
+\item 
+\Hypertarget{class_s21_matrix_a06dbeb622372a64bc0142850dfeb8d01}\label{class_s21_matrix_a06dbeb622372a64bc0142850dfeb8d01} 
+void {\bfseries Memory\+Matrix\+Set} ()
+\item 
+\Hypertarget{class_s21_matrix_a705b06eb1610474dd2df9e86f71faba9}\label{class_s21_matrix_a705b06eb1610474dd2df9e86f71faba9} 
+void {\bfseries Matrix\+Delete} ()
+\item 
+\Hypertarget{class_s21_matrix_a9a55c9427424e45b31a3a11c9bb21815}\label{class_s21_matrix_a9a55c9427424e45b31a3a11c9bb21815} 
+void {\bfseries Matrix\+Check} ()
+\item 
+\Hypertarget{class_s21_matrix_a628a6c40197a7728235ab695d8d457a1}\label{class_s21_matrix_a628a6c40197a7728235ab695d8d457a1} 
+void {\bfseries Matrix\+Check} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&matrix)
+\item 
+\Hypertarget{class_s21_matrix_a7171a243d06d17d13e163547fb2badc8}\label{class_s21_matrix_a7171a243d06d17d13e163547fb2badc8} 
+void {\bfseries Check\+Zero} (int nb)
+\item 
+\Hypertarget{class_s21_matrix_a888294f6300914dd090c66620047dcfd}\label{class_s21_matrix_a888294f6300914dd090c66620047dcfd} 
+void {\bfseries Check\+Zero} (double nb)
+\item 
+\Hypertarget{class_s21_matrix_a04da1928689b85c1439def13f6f4910e}\label{class_s21_matrix_a04da1928689b85c1439def13f6f4910e} 
+void {\bfseries Matrix\+Check\+Square} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&matrix)
+\item 
+\Hypertarget{class_s21_matrix_a2c31528999ab397125d277d3021b4ee1}\label{class_s21_matrix_a2c31528999ab397125d277d3021b4ee1} 
+void {\bfseries Matrix\+Copy} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a8f167c2e8df23dcf6b9d53d1198b5936}\label{class_s21_matrix_a8f167c2e8df23dcf6b9d53d1198b5936} 
+void {\bfseries Matrix\+Replase} (\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&\&other)
+\item 
+\Hypertarget{class_s21_matrix_a030de51434f3c8c7d93e9132c9bfc1a7}\label{class_s21_matrix_a030de51434f3c8c7d93e9132c9bfc1a7} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries Matrix\+Reduce} (int row, int col)
+\item 
+\Hypertarget{class_s21_matrix_abd63efd34114095dd2c4402dd66d68bf}\label{class_s21_matrix_abd63efd34114095dd2c4402dd66d68bf} 
+void {\bfseries LU} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&A, \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&U, \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&L)
+\item 
+\Hypertarget{class_s21_matrix_acd81f74ad676db5dfb22a372f72605db}\label{class_s21_matrix_acd81f74ad676db5dfb22a372f72605db} 
+{\bfseries S21\+Matrix} (int rows, int cols)
+\item 
+\Hypertarget{class_s21_matrix_a4fc7dcd76245a2c67af8fcf985ea7e58}\label{class_s21_matrix_a4fc7dcd76245a2c67af8fcf985ea7e58} 
+{\bfseries S21\+Matrix} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_aa54ff41338ef7b55d565d0c1970218d8}\label{class_s21_matrix_aa54ff41338ef7b55d565d0c1970218d8} 
+{\bfseries S21\+Matrix} (\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&\&other) noexcept
+\item 
+\Hypertarget{class_s21_matrix_ab6feccb6a655aff492002bb3b344dc0c}\label{class_s21_matrix_ab6feccb6a655aff492002bb3b344dc0c} 
+double {\bfseries operator()} (int i, int j) const
+\item 
+\Hypertarget{class_s21_matrix_ab97a372938cd55af995f2e348890e773}\label{class_s21_matrix_ab97a372938cd55af995f2e348890e773} 
+double \& {\bfseries operator()} (int i, int j)
+\item 
+\Hypertarget{class_s21_matrix_a4ef130a2c71e39c9261c45effe2d4397}\label{class_s21_matrix_a4ef130a2c71e39c9261c45effe2d4397} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a7391c05c804f19c436b8644ce8587353}\label{class_s21_matrix_a7391c05c804f19c436b8644ce8587353} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \& {\bfseries operator=} (\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&\&other) noexcept
+\item 
+\Hypertarget{class_s21_matrix_a381acb1729d85927807da54f953768ac}\label{class_s21_matrix_a381acb1729d85927807da54f953768ac} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator+} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a4dcc3a7e75efd905bd213a81700494cb}\label{class_s21_matrix_a4dcc3a7e75efd905bd213a81700494cb} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator-\/} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a47c89a6f60cb22c2dc484e3858702352}\label{class_s21_matrix_a47c89a6f60cb22c2dc484e3858702352} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator\texorpdfstring{$\ast$}{*}} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a92b6bd450c5693e98bc1b33dbae6d915}\label{class_s21_matrix_a92b6bd450c5693e98bc1b33dbae6d915} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator\texorpdfstring{$\ast$}{*}} (int nb)
+\item 
+\Hypertarget{class_s21_matrix_a5a68cb97f050dfbaa2dd261bca64195f}\label{class_s21_matrix_a5a68cb97f050dfbaa2dd261bca64195f} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries operator\texorpdfstring{$\ast$}{*}} (double nb)
+\item 
+\Hypertarget{class_s21_matrix_ad6b7f0261225b043a5eceae28aafe661}\label{class_s21_matrix_ad6b7f0261225b043a5eceae28aafe661} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \& {\bfseries operator\texorpdfstring{$\ast$}{*}=} (double num)
+\item 
+\Hypertarget{class_s21_matrix_a9e3b55117ac9a789a48dee4ed28e0caf}\label{class_s21_matrix_a9e3b55117ac9a789a48dee4ed28e0caf} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a46c717c652efeee063e099a0d302167e}\label{class_s21_matrix_a46c717c652efeee063e099a0d302167e} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \& {\bfseries operator+=} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_aedf0b52608f67b811b7d8ed782b3af8e}\label{class_s21_matrix_aedf0b52608f67b811b7d8ed782b3af8e} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \& {\bfseries operator-\/=} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a1d54a91f95259348e029332ea8527b84}\label{class_s21_matrix_a1d54a91f95259348e029332ea8527b84} 
+double {\bfseries Determinant} ()
+\item 
+\Hypertarget{class_s21_matrix_adfb8f81ca8b93b4aa8ea74b3e39ab6b8}\label{class_s21_matrix_adfb8f81ca8b93b4aa8ea74b3e39ab6b8} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries Calc\+Complements} ()
+\item 
+\Hypertarget{class_s21_matrix_a8d2f8f38efa1397ec9ba809df8c8fd69}\label{class_s21_matrix_a8d2f8f38efa1397ec9ba809df8c8fd69} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries Inverse\+Matrix} ()
+\item 
+\Hypertarget{class_s21_matrix_acaa5cabda23f7e8758f39ddc72221809}\label{class_s21_matrix_acaa5cabda23f7e8758f39ddc72221809} 
+\mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} {\bfseries Transpose} ()
+\item 
+\Hypertarget{class_s21_matrix_a0e90506aa92a723a1f466fd592ba9d3e}\label{class_s21_matrix_a0e90506aa92a723a1f466fd592ba9d3e} 
+void {\bfseries Mul\+Number} (const double num)
+\item 
+\Hypertarget{class_s21_matrix_a9a214ffdb2d2a53b07de685f47c9e2aa}\label{class_s21_matrix_a9a214ffdb2d2a53b07de685f47c9e2aa} 
+bool {\bfseries Eq\+Matrix} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_aaed2f61359590dde28168fae4d8db5d6}\label{class_s21_matrix_aaed2f61359590dde28168fae4d8db5d6} 
+void {\bfseries Sum\+Matrix} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_a3738cf566aa7aacfa9cd9ba229122ab6}\label{class_s21_matrix_a3738cf566aa7aacfa9cd9ba229122ab6} 
+void {\bfseries Mul\+Matrix} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_aa3c0df749d948a9986a0ebe456f9a4e5}\label{class_s21_matrix_aa3c0df749d948a9986a0ebe456f9a4e5} 
+void {\bfseries Sub\+Matrix} (const \mbox{\hyperlink{class_s21_matrix}{S21\+Matrix}} \&other)
+\item 
+\Hypertarget{class_s21_matrix_ae270daa644f944d59f30dd04b3da2381}\label{class_s21_matrix_ae270daa644f944d59f30dd04b3da2381} 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries get\+Matrix} () const
+\item 
+\Hypertarget{class_s21_matrix_a1641dcfcfc8ee9e89801b468ea9d1d96}\label{class_s21_matrix_a1641dcfcfc8ee9e89801b468ea9d1d96} 
+double {\bfseries get\+Matrix} (int row, int col) const
+\item 
+\Hypertarget{class_s21_matrix_a8c9eabec233a0fcfc10f3488a684549b}\label{class_s21_matrix_a8c9eabec233a0fcfc10f3488a684549b} 
+int {\bfseries get\+Rows} () const
+\item 
+\Hypertarget{class_s21_matrix_a737160bef9fd72e098e67d01107ce748}\label{class_s21_matrix_a737160bef9fd72e098e67d01107ce748} 
+int {\bfseries get\+Cols} () const
+\item 
+\Hypertarget{class_s21_matrix_a858d4b1994318ee735b637fde0808ed7}\label{class_s21_matrix_a858d4b1994318ee735b637fde0808ed7} 
+void {\bfseries set\+Matrix} (double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matrix)
+\item 
+\Hypertarget{class_s21_matrix_a7bec858958bd30ade69adf8e47a01381}\label{class_s21_matrix_a7bec858958bd30ade69adf8e47a01381} 
+void {\bfseries set\+Rows} (int rows)
+\item 
+\Hypertarget{class_s21_matrix_abca34ad227152a5d770b37dd50da9408}\label{class_s21_matrix_abca34ad227152a5d770b37dd50da9408} 
+void {\bfseries set\+Cols} (int cols)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_s21_matrix_a705b06eb1610474dd2df9e86f71faba9}\label{class_s21_matrix_a705b06eb1610474dd2df9e86f71faba9} 
+\index{S21Matrix@{S21Matrix}!MatrixDelete@{MatrixDelete}}
+\index{MatrixDelete@{MatrixDelete}!S21Matrix@{S21Matrix}}
+\doxysubsubsection{\texorpdfstring{MatrixDelete()}{MatrixDelete()}}
+{\footnotesize\ttfamily void S21\+Matrix\+::\+Matrix\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Удаление матрицы 
+
+Сначала мы высвобождаем память, а потом зануляем значения. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+s21\+\_\+matrix\+\_\+oop.\+h\item 
+test.\+cc\item 
+s21\+\_\+matrix.\+cc\item 
+set\+\_\+and\+\_\+get.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\doxysection{s21\+\_\+matrix\+\_\+oop.\+h}
+\hypertarget{s21__matrix__oop_8h_source}{}\label{s21__matrix__oop_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ EPS\ 0.0000001}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ rows\_;}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cols\_;}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ **matrix\_;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ пока\ паблик\ потом\ перенести\ в\ приват}}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s21_matrix_a06dbeb622372a64bc0142850dfeb8d01}{MemoryMatrixSet}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s21_matrix_a705b06eb1610474dd2df9e86f71faba9}{MatrixDelete}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ MatrixCheck();}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ MatrixCheck(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ matrix);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ CheckZero(\textcolor{keywordtype}{int}\ nb);}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ CheckZero(\textcolor{keywordtype}{double}\ nb);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ MatrixCheckSquare(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ matrix);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ MatrixCopy(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ MatrixReplase(\mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\&\ other);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ MatrixReduce(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ col);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ LU(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ A,\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ U,\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ L);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}(\textcolor{keywordtype}{int}\ rows,\ \textcolor{keywordtype}{int}\ cols);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}(\mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\&\ other);}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{\string~S21Matrix}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ operator()(\textcolor{keywordtype}{int}\ i,\ \textcolor{keywordtype}{int}\ j)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\&\ operator()(\textcolor{keywordtype}{int}\ i,\ \textcolor{keywordtype}{int}\ j);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ operator=(\mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\&\ other);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ operator+(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ operator-\/(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ operator*(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ operator*(\textcolor{keywordtype}{int}\ nb);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ operator*(\textcolor{keywordtype}{double}\ nb);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ operator*=(\textcolor{keywordtype}{double}\ num);}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ operator+=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ operator-\/=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ Determinant();}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ CalcComplements();}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ InverseMatrix();}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\ Transpose();}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ MulNumber(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ num);}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ EqMatrix(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ SumMatrix(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ MulMatrix(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ SubMatrix(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_s21_matrix}{S21Matrix}}\&\ other);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}**\ getMatrix()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ getMatrix(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ col)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getRows()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getCols()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setMatrix(\textcolor{keywordtype}{double}**\ matrix);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setRows(\textcolor{keywordtype}{int}\ rows);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setCols(\textcolor{keywordtype}{int}\ cols);}
+\DoxyCodeLine{00068\ \};}
+
+\end{DoxyCode}
